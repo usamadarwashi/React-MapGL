@@ -1,14 +1,23 @@
 import './App.css'
 import Usama from "./components/usama.tsx";
 import Table from "./components/table.tsx";
+import {useState} from "react";
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [count,setCount] = useState(false)
 
-  return (
+    function toggleTable() {
+        if (count) setCount(false)
+        else setCount(true)
+    }
+
+    return (
     <>
         <Usama></Usama>
-        <Table></Table>
+        <button onClick={toggleTable}>Toggle Table</button>
+        {
+            count && <Table></Table>
+        }
     </>
   )
 }
