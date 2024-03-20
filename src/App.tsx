@@ -16,8 +16,9 @@ function App() {
                 maxWidth: '250px',
                 textAlign: 'center',
             }}>
-                <h1>Widget</h1>
-                <p>Information inside the widget</p>
+                <h1>Oman</h1>
+                <p>سلام عليكوووم</p>
+
             </div>
             {/*<Usama></Usama>*/}
             {/*<button onClick={toggleTable}>Toggle Table</button>*/}
@@ -32,7 +33,7 @@ function App() {
                     zoom: 5
                 }}
                 style={{width: '100vw', height: '100vh'}}
-                mapStyle="mapbox://styles/mapbox/streets-v9"
+                mapStyle="mapbox://styles/mapbox/light-v11"
             />
         </>
     )
